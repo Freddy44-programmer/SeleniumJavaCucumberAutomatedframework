@@ -8,6 +8,8 @@ public class LoginPage extends BrowserDriver {
     public  static String password_text_id ="pwd";
     public  static String login_btn_xpath ="//*[@id=\"second_form\"]/input";
 
+    public  static String newuser_register_btn_xpath ="//*[@id=\"NewRegistration\"]";
+
     public static void sendkeys_username() throws InterruptedException{
         driver.findElement(By.id(username_text_id)).sendKeys("test@gmail.com");
     }
