@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/main/java/features"
                 ,glue={"utility", "stepDefinition"},
-                 plugin = {"pretty","html:target/cucumber-html-report","json:cucumber."}
+                 plugin = {"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
 
 
 )
