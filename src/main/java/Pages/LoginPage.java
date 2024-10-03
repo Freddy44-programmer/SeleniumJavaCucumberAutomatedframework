@@ -21,4 +21,9 @@ public class LoginPage extends BrowserDriver {
         driver.findElement(By.xpath(login_btn_xpath)).click();
     }
 
+    public static void User_clicks_New_Register_button(){
+
+        driver.findElement(By.xpath(newuser_register_btn_xpath)).click();
+    }
+
 }

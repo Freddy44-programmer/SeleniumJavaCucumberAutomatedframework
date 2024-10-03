@@ -14,4 +14,15 @@ public class LoginPage {
 
     }
 
+
+    @When("User clicks on new Registration button")
+    public void user_clicks_on_new_registration_button() throws InterruptedException{
+
+        User_clicks_New_Register_button();
+
+    }
+
+
+
+
 }
