@@ -10,6 +10,8 @@ public class HomePage extends BrowserDriver {
     public  static String hamburger_menu_xpath ="//*[@id=\"menuToggle\"]/input";
     public  static String signIn_link_LinkText ="Sign In Portal";
 
+    public  static String OnlineProductsPage_link_LinkText ="Online Products";
+
     public static void Click_hamburger_menu() throws InterruptedException{
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -20,10 +22,17 @@ public class HomePage extends BrowserDriver {
 
 
 
-
     public static void Click_signIn_link() throws InterruptedException{
         Thread.sleep(2000);
         driver.findElement(By.linkText(signIn_link_LinkText)).click();
     }
+
+
+
+    public static void Click_OnlineProducts_link() throws InterruptedException{
+        Thread.sleep(2000);
+        driver.findElement(By.linkText(OnlineProductsPage_link_LinkText)).click();
+    }
+
 
 }
